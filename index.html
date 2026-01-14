@@ -45,6 +45,46 @@
                 <p>Classroom</p>
             </div>
         </div>
+    </section>\
+    <section class="message" id="message">
+        <h3>Message Us</h3>
+
+        <div class="message-container">
+
+            <!-- FORM -->
+            <form id="contactForm">
+                <label>Nama</label>
+                <input type="text" id="name" required>
+
+                <label>Tanggal Lahir</label>
+                <input type="date" id="dob" required>
+
+                <label>Jenis Kelamin</label>
+                <div>
+                    <input type="radio" name="gender" value="Laki-laki" checked> Laki-laki
+                    <input type="radio" name="gender" value="Perempuan"> Perempuan
+                </div>
+
+                <label>Pesan</label>
+                <textarea id="messageText"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+
+            <!-- HASIL -->
+            <div class="result" id="result">
+                <p><b>Current time:</b> - </p>
+                <p><b>Nama:</b> - </p>
+                <p><b>Tanggal Lahir:</b> - </p>
+                <p><b>Jenis Kelamin:</b> - </p>
+                <p><b>Pesan:</b> - </p>
+            </div>
+
+        </div>
     </section>
+
+    <script src="js/script.js"></script>
+
 </body>
+
 </html>
