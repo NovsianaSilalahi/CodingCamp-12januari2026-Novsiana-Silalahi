@@ -1,0 +1,54 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px 40px;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+nav a {
+    border: 1px solid #ccc;
+    padding: 5px 12px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.hero {
+    padding: 40px;
+}
+
+.banner {
+    margin-top: 40px;
+    height: 300px;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.facility {
+    padding: 40px;
+    border-top: 1px solid #ccc;
+}
+
+.facility-box {
+    display: flex;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.circle {
+    width: 120px;
+    height: 120px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
