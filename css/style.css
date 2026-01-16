@@ -209,16 +209,35 @@ body{
 
 /* PROFILE HERO */
 .profile-hero{
-    background:#3b5b3b;
-    color:white;
-    text-align:center;
-    padding:70px 20px;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
 }
 
-.profile-hero h1{
-    font-family:'Playfair Display',serif;
-    font-size:48px;
+.profile-hero img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
+
+.hero-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+}
+
+.hero-text h1{
+    font-size: 36px;
+}
+
+.hero-text p{
+    font-size: 18px;
+}
+
 
 /* PROFILE SECTION */
 .profile-section{
@@ -285,7 +304,7 @@ body{
 }
 
 .portfolio-hero img{
-    width:280px;
+    width:200px;
     border-radius:30px;
     box-shadow:0 10px 25px rgba(0,0,0,0.4);
 }
@@ -380,4 +399,75 @@ footer{
     padding:6px 14px;
     border-radius:20px;
     margin-right:5px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+/* NAVBAR */
+.navbar{
+    flex-direction:column;
+    gap:10px;
+}
+
+nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+nav a{
+    margin:5px;
+}
+
+/* HERO HOME */
+.hero{
+    padding:30px;
+}
+
+.banner{
+    height:250px;
+}
+
+/* FACILITY */
+.facility-box{
+    flex-direction:column;
+    align-items:center;
+}
+
+/* MESSAGE */
+.message-container{
+    flex-direction:column;
+}
+
+/* PROFILE */
+.profile-hero h1{
+    font-size:32px;
+}
+
+.profile-section{
+    grid-template-columns:1fr;
+    padding:30px;
+}
+
+/* TEAM */
+.team-box{
+    flex-direction:column;
+    align-items:center;
+}
+
+/* PORTFOLIO */
+.portfolio-hero{
+    flex-direction:column;
+    text-align:center;
+    gap:20px;
+}
+
+.portfolio-hero img{
+    width:200px;
+}
+
+.projects{
+    grid-template-columns:1fr;
+}
 }
